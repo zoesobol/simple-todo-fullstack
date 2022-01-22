@@ -4,12 +4,11 @@ import "./App.css";
 import { API } from "aws-amplify";
 
 function App() {
-  const [message, setMessage] = useState(null);
   const [todos, setTodos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const listTodos = todos.map((d) => (
-    <div>
-      <h2>{d.name.S}</h2>
+    <div className="todo">
+      <h3>{d.name.S}</h3>
       <p>{d.description.S}</p>
     </div>
   ));
@@ -28,7 +27,9 @@ function App() {
   if (isLoading) {
     return (
       <div className="App">
-        <header className="App-header">{listTodos}</header>
+        <header className="App-header">
+          <h1>Loading...</h1>
+        </header>
       </div>
     );
   } else {
@@ -36,6 +37,12 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h1>To-do's</h1>
+          <p>
+            Agregar todo:{" "}
+            <a href="https://q6n42psf5g.execute-api.us-east-1.amazonaws.com/dev/simpletodoapi">
+              https://q6n42psf5g.execute-api.us-east-1.amazonaws.com/dev/simpletodoapi
+            </a>
+          </p>
           {listTodos}
         </header>
       </div>
