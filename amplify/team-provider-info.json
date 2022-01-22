@@ -19,7 +19,7 @@
         },
         "todos": {
           "deploymentBucketName": "amplify-simpletodofullstack-dev-184842-deployment",
-          "s3Key": "amplify-builds/todos-444438784c376a2f7743-build.zip"
+          "s3Key": "amplify-builds/todos-316d67792f6d7034346b-build.zip"
         }
       }
     }
