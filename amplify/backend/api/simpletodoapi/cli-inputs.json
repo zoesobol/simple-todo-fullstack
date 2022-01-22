@@ -1,16 +1,9 @@
 {
   "version": 1,
   "paths": {
-    "/todo": {
-      "name": "/todo",
-      "lambdaFunction": "simpletodoapi",
-      "permissions": {
-        "setting": "open"
-      }
-    },
     "/simpletodoapi": {
       "name": "/simpletodoapi",
-      "lambdaFunction": "simpletodoapi",
+      "lambdaFunction": "todos",
       "permissions": {
         "setting": "open"
       }

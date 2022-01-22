@@ -1,0 +1,10 @@
+{
+  "resourceName": "simpletodostorage",
+  "tableName": "todos",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
