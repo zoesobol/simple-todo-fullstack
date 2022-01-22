@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "storage": {
+      "simpletodostorage": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}
