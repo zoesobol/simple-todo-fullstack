@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/simpletodoapi": {
+      "name": "/simpletodoapi",
+      "lambdaFunction": "simpletodoapi",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

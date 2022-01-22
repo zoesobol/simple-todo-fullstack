@@ -10,6 +10,14 @@
       "StackName": "amplify-simpletodofullstack-dev-184842",
       "StackId": "arn:aws:cloudformation:us-east-1:838937257325:stack/amplify-simpletodofullstack-dev-184842/eac35170-7b03-11ec-9a7c-127a6f673029",
       "AmplifyAppId": "d13j53qrixg0f"
+    },
+    "categories": {
+      "function": {
+        "simpletodoapi": {
+          "deploymentBucketName": "amplify-simpletodofullstack-dev-184842-deployment",
+          "s3Key": "amplify-builds/simpletodoapi-50616241324544736233-build.zip"
+        }
+      }
     }
   }
 }
