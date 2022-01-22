@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/simple-todo-fullstack/static/css/main.073c9b0a.css",
+    "main.js": "/simple-todo-fullstack/static/js/main.cab0c95b.js",
+    "static/js/787.f948490b.chunk.js": "/simple-todo-fullstack/static/js/787.f948490b.chunk.js",
+    "static/media/logo.svg": "/simple-todo-fullstack/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/simple-todo-fullstack/index.html",
+    "main.073c9b0a.css.map": "/simple-todo-fullstack/static/css/main.073c9b0a.css.map",
+    "main.cab0c95b.js.map": "/simple-todo-fullstack/static/js/main.cab0c95b.js.map",
+    "787.f948490b.chunk.js.map": "/simple-todo-fullstack/static/js/787.f948490b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.cab0c95b.js"
+  ]
+}
