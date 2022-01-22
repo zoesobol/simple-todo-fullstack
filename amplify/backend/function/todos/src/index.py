@@ -33,5 +33,42 @@ def list_todos():
     return jsonify(data=client.scan(TableName=TABLE))
 
 
+@app.route(BASE_ROUTE + '/<todo_id>', methods=['GET'])
+def get_todo(todo_id):
+    item = client.get_item(TableName=TABLE, Key={
+        'id': {
+            'S': todo_id
+        }
+    })
+    return jsonify(data=item)
+
+
+@app.route(BASE_ROUTE + '/<todo_id>', methods=['PUT'])
+def update_todo(todo_id):
+    client.update_item(
+        TableName=TABLE,
+        Key={'id': {'S': todo_id}},
+        UpdateExpression='SET #name = :name, #description = :description',
+        ExpressionAttributeNames={
+            '#name': 'name',
+            '#description': 'description'
+        },
+        ExpressionAttributeValues={
+            ':name': {'S': request.json['name']},
+            ':description': {'S': request.json['description']},
+        }
+    )
+    return jsonify(message="item updated")
+
+
+@app.route(BASE_ROUTE + '/<todo_id>', methods=['DELETE'])
+def delete_todo(todo_id):
+    client.delete_item(
+        TableName=TABLE,
+        Key={'id': {'S': todo_id}}
+    )
+    return jsonify(message="item deleted")
+
+
 def handler(event, context):
     return awsgi.response(app, event, context)
